@@ -1,6 +1,7 @@
 const { response, request } = require("express"); //Esto es para tener los métodos de express (Esto se podria evitar si manejara typescript)
-const Usuario = require("../models/usuario");
 const bcryptjs = require("bcryptjs");
+
+const Usuario = require("../models/usuario");
 
 const usuariosGet = async (req, res) => {
   // const { q, nombre = "No name", apikey } = req.query;
